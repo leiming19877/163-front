@@ -1,0 +1,31 @@
+/* 带下划线元件  */
+.u-un-link:hover{text-decoration: underline;}
+/* 关注元件  */
+.u-attention{display: inline-block;line-height:12px; padding:4px 9px 5px 22px; border-radius:1px;font-size:12px;color:#ffffff; background: url(../img/sprites.png) no-repeat  -51px 7px #2fb556;}
+
+.u-attention:hover{color:#ffffff;}
+
+/* 已关注元件  */
+.u-have-attention{display: inline-block;height:19px;line-height:19px; padding: 0 7px 0 6px;border: 1px solid #efefef;font-size:12px;white-space:nowrap; color:#cccccc;}
+.u-have-attention .icon{display: inline-block;width: 11px;height: 10px;background: url(../img/sprites.png) no-repeat  -240px -28px; }
+
+.u-have-attention .have-attention{ margin: 0 4px 0 1px;color: #333333}
+
+.u-have-attention .l{margin-right: 3px; }
+
+.u-have-attention .cancel{color:#cccccc;}
+
+.u-have-attention .cancel:hover{text-decoration: underline;color:#39a030;}
+
+/* 微博元件  */
+.u-weibo{display: inline-block;width: 19px;height: 16px;background: url(../img/sprites.png) no-repeat  0 -28px; }
+
+/* 显示人数元件  */
+.u-pepole{display: inline-block;width: 11px;height: 12px;background: url(../img/sprites.png) no-repeat  -120px 0; }
+/* 关闭元件  */
+.u-colse{display:inline-block; width: 23px;height: 22px;background: url(../img/sprites.png) no-repeat -60px -28px; cursor: pointer; }
+
+/* 输入元件  */
+.u-ipt1{width: 282px;height: 43px;line-height:43px;padding-left:11px;  border: 1px solid #dfdfdf;font-size:16px;font-family: "Arial", "Hiragino Sans GB", "Microsoft YaHei",\5fae\8f6f\96c5\9ed1, "Helvetica", "sans-serif"; color: #cccccc;-webkit-box-shadow: inset 1px 1px 0 #f1f1f1;-moz-box-shadow: inset 1px 1px 0 #f1f1f1;box-shadow: inset 1px 1px 0 #f1f1f1;}
+
+.u-bnt1{width: 291px; height: 44px;line-height: 44px;border: 1px solid #189936;text-align:center; font-size:16px;font-family: "Arial", "Hiragino Sans GB", "Microsoft YaHei",\5fae\8f6f\96c5\9ed1, "Helvetica", "sans-serif"; color: #ffffff;background-color: #2db352;filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '#31b658', endColorstr = '#159631');-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr = '#31b658', endColorstr = '#159631')";background-image: -moz-linear-gradient(to top, #31b658, #159631);background-image: -ms-linear-gradient(to top, #31b658, #159631);background-image: -o-linear-gradient(to top, #31b658, #159631);background-image: -webkit-gradient(linear, center to top, center bottom, from(#31b658), to(#159631));background-image: -webkit-linear-gradient(to top, #31b658, #159631);background-image: linear-gradient(to top, #31b658, #159631);-webkit-box-shadow: 1px 1px 0 #d5e3da;-moz-box-shadow: 1px 1px 0 d5e3da;box-shadow: 1px 1px 0 d5e3da;}

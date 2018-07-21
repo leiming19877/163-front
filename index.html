@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>前端微专业大作业</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />    
+    <meta name="description" content=""/>
+    <meta name="keywords" content=""/>
+   
+    <link href="css/reset.css" rel="stylesheet" type="text/css"/>
+    <link href="css/function.css" rel="stylesheet" type="text/css"/>
+    <!-- 页面样式 -->
+    <link href="css/index-page.css" rel="stylesheet" type="text/css"/>
+    <!-- 页面元件样式 -->
+    <link href="css/page-unit.css" rel="stylesheet" type="text/css"/>
+    <!-- 布局响应样式 -->
+    <link href="css/media.css" rel="stylesheet" type="text/css"/>
+    
+    
+  
+    
+</head>
+
+<body>
+    <!-- 提醒信息 -->
+    <div class="g-w100 m-top-tip f-fs1" id="m-top-tip">
+        <div class="g-row f-cb">
+            <span>网易云课堂微专业，帮助你掌握专业技能，令你求职或加薪多一份独特优势</span>
+            <a class="see u-un-link" href="#">立即查看&gt;</a>
+            <a class="f-fr f-ib no-notice" id="no-notice" >不再提醒</a>
+        </div>
+    </div>
+    <!-- 导航信息 -->
+    <div class="g-w100 f-bg1" >
+        <div class="g-row m-nav">
+            <div class="left" >
+                <img class="logo1"  src="img/edu-1.jpg" />  
+                <span id="attention" class="attention"  >
+                    <a href="#" class="u-attention">关注</a>
+                    <span>粉丝 45</span>
+                </span>
+                <span id="have-attention" class="u-have-attention hide">
+                    <span class="icon"></span>
+                    <span class="have-attention">已关注</span>
+                    <span class="l">|</span>
+                    <a id="cancel-attention"  href="javascript:void(0);" class="cancel">取消</a>                       
+                </span>
+            </div>
+            <div class="right product"  >
+                    <a href="http://open.163.com/" target="_blank" class="p1" ></a>
+                    <a href="http://study.163.com/" target="_blank"  class="p2"></a>
+                    <a href="http://www.icourse163.org/" target="_blank"  class="p3"></a>
+                    <a href="#" class="p-s"></a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- 轮播图 -->
+	<div class="g-w100">
+		<div class="m-slide" id="m-slide">
+				<!-- 图片 -->
+				<a href="http://open.163.com/" target="_blank">
+				    <img src="img/banner1.jpg" />
+				</a>
+				<a href="http://study.163.com/"
+					target="_blank">
+					<img src="img/banner2.jpg" />
+				</a>
+			    <a  href="http://www.icourse163.org/" target="_blank">
+			         <img src="img/banner3.jpg" />
+			    </a>
+				<!-- 以下是指示器 -->
+				<div class="pointer">
+					<i class="cur"></i><i></i><i></i>
+				</div>
+		</div>
+	</div>
+	<!-- 三个产品 -->
+    <div class="g-w100 f-bg1">
+        <div class="g-row m-product f-cb">
+                <div class="p p1">
+                        <div class="icon">
+                            <div ></div>
+                        </div>
+                        <div class="content">
+                            <h2 class="title">网易公开课</h2>
+                            <p class="desc">推出国内外名校公开课，涉及广泛的学科，名校老师认真讲解深度剖析，网易视频公开课频道搭建起强有力的网络视频教学平台。</p>
+                            <p class="more">
+                                <a href="http://open.163.com/" target="_blank" class="u-un-link">了解更多&gt;</a>
+                            </p>
+                        </div>
+                </div>
+                <div class="p p2" >
+                     <div class="icon">
+                            <div ></div>
+                        </div>
+                        <div class="content">
+                            <h2 class="title">网易公开课</h2>
+                            <p class="desc">网易旗下大型在线学习平台，该平台面向学习者提供海量免费、优质课程,创新的个性化学习体验，自由开放的交流互动环境。</p>
+                            <p class="more">
+                                <a href="http://study.163.com/" target="_blank" class="u-un-link">了解更多&gt;</a>
+                            </p>
+                        </div>
+                </div>
+                <div class="p p3">
+                     <div class="icon">
+                            <div ></div>
+                        </div>
+                        <div class="content">
+                            <h2 class="title">中国大学MOOC</h2>
+                            <p class="desc">是爱课程网携手云课堂打造的在线学习平台，每一个有提升愿望的人,都可以在这里学习中国最好的大学课程，学完还能获得认证证书。</p>
+                            <p class="more">
+                                <a href="http://www.icourse163.org/" target="_blank" class="u-un-link">了解更多&gt;</a>
+                            </p>
+                        </div>
+                </div>
+        </div>
+    </div>
+    
+    <!-- 工作环境 -->
+    <div class="g-w100">
+         <div class="m-worksapce">
+            <!-- 要显示居中的图片 -->
+            <div class="wrap"></div>
+         </div>
+    </div>
+    
+    
+    
+    <!-- 主内容区 -->
+    <div class="g-w100">
+        <div class="g-row m-maininfo f-cb">
+                <div class="g-left">
+                    <div class="g-left-c">
+                        <!-- 课程列表tab -->
+                        <div class="m-tab" id="m-tab">
+                            <ul class="tabs  f-cb">
+                                <li><a href="javascript:void(0);" data-type="10" class="zcur">产品设计</a></li>
+                                <li><a href="javascript:void(0);" data-type="20" >编号语言</a></li>
+                            </ul>
+                            <div class="m-data-list f-cb" id="course-content" >
+                                
+                                
+                            </div>
+                        </div>
+                        
+                        <!-- 分页信息  -->
+					<div class="m-page" id="m-page">
+						<a href="javascript:void(0);" class="zbtn zprev disabled">上一页</a><a href="javascript:void(0);"
+							class="znum selected">1</a><a href="javascript:void(0);" class="znum">2</a><a
+							href="javascript:void(0);" class="znum">3</a><a href="javascript:void(0);" class="znum">4</a><a
+							href="javascript:void(0);" class="znum">5</a><a href="javascript:void(0);" class="znum">6</a><a
+							href="javascript:void(0);" class="znum">7</a><a href="javascript:void(0);" class="znum"
+							>8</a><a href="javascript:void(0);" class="zbtn znext">下一页</a>
+
+					</div>
+				</div>
+                    <!-- 左则内容结束 -->
+                </div>
+                
+                <!-- 右侧区域 -->
+                <div class="g-right">
+                    <!-- 机构介绍 -->
+                    <div class="m-dept">
+                            <h2>机构介绍</h2>
+                            <div class="content">
+                                <p class="text">观看下面的视频来了解吧：</p>
+                                <a id="video-open" class="img" href="javascript:void(0);"><img  src="img/department.jpg" /></a>
+                            </div>
+                    </div>
+                    <!-- 最热排行榜 -->
+                    <div class="m-hot">
+                            <h2>最热排行</h2>
+                            <div class="hot-wrap">
+                                <div class="content" id="hot-content">
+                                
+                                </div>
+                            </div>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+	<!-- 底部 -->
+    <div class="g-w100 m-foot">
+            <div class="g-wrap content f-cb">
+                    <div class="block block1">
+                           <img  src="img/edu-2.jpg"/>
+                           <p>©2014 icourse163.org 浙ICP备08114786号-1</p>
+                           <p>icourses.cn 京ICP备12020869号-2 京公网安备110102000459-2</p>
+                    </div>
+                    <div class="block block2">
+                        <p class="f-fs1">友情链接：</p>
+                        <p><a  href="http://open.163.com/" target="_blank">网易公开课</a></p>
+                        <p><a class="f-tdu" href="http://study.163.com/" target="_blank">网易云课堂</a></p>
+                        <p><a  href="http://www.icourse163.org/" target="_blank">中国大学MOOC</a></p> 
+                    </div>
+                    <div class="block block3">
+                        <p class="f-fs1">我们:</p>
+                        <p><a  href="#">关于</a></p>
+                        <p><a  href="#">联系</a></p>
+                        <p><a  href="#">关注<s class="weibo u-weibo"></s></a></p>  
+                    </div>
+                    <div class="block block4">
+                        <p class="f-fs1">更多：</p>
+                        <p><a  href="#">常见问题</a></p>
+                        <p><a  href="#">意见反馈</a></p>
+                       
+                        
+                    </div>
+            </div>
+    </div>
+    
+    <!-- 课程提示内容 -->
+    <div class="m-course-pop" id="m-course-pop" >
+        
+        
+    </div>
+    <!-- 遮罩层 -->
+    <div  class="f-mask" id="mask" ></div>
+    <!-- 登录弹出框模块 -->
+    <div class="m-login" id="m-login" >
+        <table class="g-table">
+            <tr>
+                <td> 
+                    <form class="login-form" onsubmit="return false;" >
+                        <span class="u-colse colse"></span>
+                        <div class="title" >
+                                                                    登录网易云课堂
+                        </div>
+                        <div>
+                            <input type="text" id="username" name="username" class="u-ipt1" placeholder="账号" />
+                        </div>
+                        <div class="pass">
+                            <input type="password" id="password" name="password" t class="u-ipt1" placeholder="密码" />
+                        </div>
+                        <div>
+                           <button id="login-btn" class="u-bnt1">登录</button>     
+                        </div>
+                    </form>
+                </td>
+            </tr>
+        </table>
+    </div>  
+    
+    <!-- 视频播放模块 -->
+    <div class="m-video" id="m-video" >
+        <table class="g-table">
+            <tr>
+                <td> 
+                    <div class="video">
+                        <span id="video-colse" class="u-colse colse"></span>
+                        <div class="title">请观看下面的视频</div>
+                        <!-- 这里发现一个问题，将视频高度按psd里的高度设置的话，
+                                                                        在chorme,firefox浏览器里会存在有空白区问题，经过
+                                                                        测试，将高度设置为500时，chorme,firefox不会存在空白区的问题
+                        -->
+                        <video id="video" src="http://mov.bn.netease.com/open-movie/nos/mp4/2014/12/30/SADQ86F5S_shd.mp4"
+                         width="889" height="500" 
+                        controls="controls" >
+                            
+                        </video>
+                    </div>                 
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!-- 执点排行html模板 -->
+    <script type="text/template" id="course-template">
+                        <div class="item" >
+                                    <div class="content">
+                                        <a href="{{providerLink}}" target="_blank" class="img-link"><img class="img" src="{{smallPhotoUrl}}" /></a>
+                                        <div class="name f-fs1 f-toe">{{name}}</div>
+                                        <div class="org-name f-fs1 f-toe">{{provider}}</div>
+                                        <div>
+                                            <span class="num">{{learnerCount}}</span>
+                                        </div>
+                                        <div class="price">{{price}}</div>
+                                    </div>
+                                    
+                          </div> 
+    </script>
+    <!-- 课程弹出提示html模板 -->
+    <script type="text/template" id="course-pop-template">
+       <div class="pop-wrap">
+            <div class="pop-content ">
+                <div class="f-cb">
+                    <a class="p-img" href="{{providerLink}}" target="_blank">
+                        <img src="{{smallPhotoUrl}}">
+                    </a>
+                    <div class="f-fl">
+                        <div class="p-cat-name f-toe">{{name}}</div>
+                        <div class="p-num">
+                            <span class="u-pepole"></span> <span>{{learnerCount}}在学习</span>
+                        </div>
+                        <div class="p-field f-toe">
+                            <label>发布者：</label> <span>{{provider}}</span>
+                        </div>
+                        <div class="p-field f-toe">
+                            <label>分类：</label> <span>{{providerDesc}}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-desc">{{description}}</div>
+            </div>
+        </div>
+    </script>
+    <!-- 执点排行html模板 -->
+    <script type="text/template" id="hot-template">
+        <div class="item f-cb">
+             <a href="{{providerLink}}" target="_blank" class="img-link" ><img class="img" src="{{smallPhotoUrl}}" /></a>
+             <div class="desc">
+                <a href="{{providerLink}}" class="title f-toe">{{name}}</a>
+                  <div class="count"><s class="u-pepole"></s><span>{{learnerCount}}</span></div>
+               </div>
+         </div>
+    </script>
+    
+    <!-- 基础js -->
+    <script type="text/javascript" src="js/base/Element.js" ></script>
+    <script type="text/javascript" src="js/base/Function.js" ></script>
+    <script type="text/javascript" src="js/base/String.js" ></script>
+    <script type="text/javascript" src="js/util/Util.js" ></script>
+    <script type="text/javascript" src="js/base/Ajax.js" ></script>
+    <script type="text/javascript" src="js/util/Cookie.js" ></script>
+    <script type="text/javascript" src="js/util/Template.js" ></script>
+    <script type="text/javascript" src="js/util/md5.js" ></script>
+
+    <!-- 模块js -->
+    <script type="text/javascript" src="js/module/top-tip-module.js" ></script>
+    <script type="text/javascript" src="js/module/slide-module.js" ></script>
+    <script type="text/javascript" src="js/module/login-module.js" ></script>
+    <script type="text/javascript" src="js/module/hot-auto-play-module.js" ></script>
+    <script type="text/javascript" src="js/module/hot-module.js" ></script>
+    <script type="text/javascript" src="js/module/course-module.js" ></script>
+    <script type="text/javascript" src="js/module/page-module.js" ></script>
+    <script type="text/javascript" src="js/module/tab-module.js" ></script>
+    
+    
+    <script type="text/javascript" src="js/module/video-module.js" ></script>
+  
+   
+    
+      
+</body>
+</html>

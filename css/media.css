@@ -1,0 +1,32 @@
+﻿/* media */
+/* 横屏 */
+@media screen and (orientation:landscape){
+    
+}
+/* 竖屏 */
+@media screen and (orientation:portrait){
+    
+}
+/* 窗口宽度<=1205,设计宽度=960，即使用窄屏宽度  */
+@media screen and (max-width:1205px){
+     .g-row{width: 960px;}
+}
+/* 窗口宽度>=1205,设计宽度=1205，这个样式一定要放到960大小布局后面，
+ * 因为当宽刚好是1205的时候，大小布局都会生效，需要用大布局覆盖小布局样
+ * 式 ，在我看来有一种更好的方法，那就是我在全局样式中即然设置为了大布局，
+ * 那在响应试只，只需要设置小布局就行了，虽然1205时会重叠，那我们就不设置
+ * 为1205，设置为小布局小于等于1204就行了  
+ */
+@media screen and (min-width:1205px){
+    .g-row{width:1205px;}
+}
+
+
+/* windows UI 贴靠 */
+@media screen and (-ms-view-state:snapped){
+    
+}
+/* 打印 */
+@media print{
+    
+}

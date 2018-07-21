@@ -1,0 +1,191 @@
+html,body{width: 100%; height: 100%; }
+/* 100%宽布局，但最最小960px宽 */
+.g-w100{width: 100%;min-width: 960px;}
+/* 默认大屏布局  */
+.g-row{width:1205px;margin:0 auto;}
+/* 960px布局  */
+.g-wrap{width: 960px;margin:0 auto;}
+ 
+/* 垂直居中布局  */
+.g-table{width: 100%;height: 100%;}
+.g-table td{width: 100%;height: 100%;vertical-align: middle;}
+
+
+/* 最顶部模块 */
+.m-top-tip{ padding:10px 0; background-color: #f3f3f3; }
+/* 查看link */
+.m-top-tip .see{margin-left: 12px;}
+/* 不再提醒  */
+.m-top-tip .no-notice{width:65px;margin-right: 3px;text-align: right;color:#333333; background: url(../img/sprites.png) no-repeat 0 3px;}
+
+
+/* 导航  */
+.m-nav  {position:relative;height: 90px;}
+/* 实现底部对齐  */
+.m-nav .left{position:absolute;left:0;bottom:37px; }
+.m-nav .right{position:absolute;right:0;bottom:37px;}
+.m-nav .logo1{margin-right: 30px;vertical-align: middle;background-color: #ffffff;}
+.m-nav .attention{display: inline-block;height: 21px;line-height: 21px;}
+.m-nav .hide{display: none;}
+
+/* 三个产品导航  */
+.m-nav .product{height:20px;margin-right: 14px;}
+.m-nav .product a{display:inline-block;height:16px; background: url(../img/sprites.png) no-repeat;}
+.m-nav .product .p1{width:78px; background-position:0 -140px; }
+.m-nav .product .p1:hover{background-position:0 -176px; }
+.m-nav .product .p2{width:47px; margin-left:52px; background-position:-132px -140px; }
+.m-nav .product .p3{width:115px;margin-left:54px;  background-position:-234px -140px; }
+.m-nav .product .p-s{width:20px;height:20px; margin-left:30px;  background-position:-120px -28px; }
+.m-nav .product .p-s:hover{background-position:-180px -28px; }
+
+
+/* 轮播图  */
+.m-slide{position: relative;height:460px; max-width: 1652px;margin:0 auto;text-align: center;}
+.m-slide a{display:block; position: absolute;}
+.m-slide a,.m-slide img{width: 100%;height: 100%;}
+.m-slide .pointer{display: inline-block;position:absolute;bottom: 20px;z-index: 4;}
+.m-slide  i{display: inline-block;width: 10px;height: 10px;margin-left: 5px; border-radius:50%;background-color: #fffcfe;cursor: pointer;}
+.m-slide  .cur{background-color: #323431;}
+
+
+/* 三个产品  */
+.m-product{padding: 60px 0;}
+/* 根据测量的值，对三个产品进行百分比布局,width: 28.7%; 修改成28.6%可以兼容ie7+ */
+.m-product .p{float:left; width: 28.7%; text-align: center; }
+/* 对第二个产品进行内间居设置  */
+.m-product .p2{padding: 0 6.95% 0 6.95%;}
+
+.m-product .icon{float:left; width: 105px;}
+.m-product .icon div{width:80px;height:80px;margin:10px 5px 0 0; border-radius:50%; background: url(../img/sprites.png) no-repeat #39a030; }
+.m-product .p1 .icon div{background-position:22px -57px; }
+.m-product .p2 .icon div{background-position:-41px -57px;}
+.m-product .p3 .icon div{background-position:-115px -55px; }
+.m-product .content{margin-left: 105px;text-align: left;}
+.m-product .title{font-size: 22px;font-weight: bold;color:#333333;}
+.m-product .desc{line-height:25px; margin-top: 20px;color:#666666;}
+.m-product .more{margin-top: 35px;}
+
+/* 工作环境图片展示图片居中*/
+.m-worksapce{max-width:1616px; margin:0 auto; height:220px; padding:2px 0 81px 0; background-color: #f8f8f8;}
+.m-worksapce .wrap{ height:220px; background: url(../img/workspace.jpg) no-repeat center center;}
+
+
+/* 主内容区两列布局  */
+.m-maininfo{padding-bottom: 120px;}
+.m-maininfo .g-left{float:left;width:100%;}
+.m-maininfo .g-left-c{margin-right:246px;}
+.m-maininfo .g-right{position:relative;float:right;width:225px;margin-left:-225px;}
+
+/* 主内容区tab  */
+.m-tab{}
+.m-tab .tabs{}
+.m-tab .tabs li{float:left; }
+.m-tab .tabs li:first-child{border: 1px solid #ecebeb;border-top: none;border-right: none; }
+.m-tab .tabs li:last-child{border: 1px solid #ecebeb;border-top: none;border-left: none; }
+.m-tab .tabs a{display:block;width: 199px;height: 50px;margin-left:1px; line-height: 50px;border-bottom: 1px solid #d4d3d3; font-size:20px;text-align:center; color:#666666;background-color: #ffffff;}
+.m-tab .tabs a:hover,.m-tab .tabs a.zcur{color:#ffffff;background-color: #39a030;}
+
+
+
+/* 数据列表模块,在小布局时将多出的内容隐藏  */
+.m-data-list{ max-height:1250px; margin:27px 0 0 -21px;overflow: hidden; }
+/* 在调试这个模块时，出现了一个小插曲，chrome对border的渲染1px染料成了1.11px,关闭chrome重新打开就没问题了  */
+.m-data-list .item{display:block; position:relative;float:left; width:223px;height:228px; margin: 0 0 20px 18px;padding:1px 1px 0 1px; border:1px solid  #f1f1f1;border-top: none; background-color: #ffffff;-webkit-box-shadow: 0px 1px 0px #f1f1f1;-moz-box-shadow: 0px 1px 0px #f1f1f1;box-shadow: 0px 1px 0px #f1f1f1; }
+.m-data-list .item:hover{-webkit-box-shadow: 1px 1px 20px #686868;-moz-box-shadow: 1px 1px 20px #686868;box-shadow: 1px 1px 20px #686868;}
+
+/* 内容展示区  */
+.m-data-list .item .content{}
+.m-data-list .item .img{display: block; width: 223px;height: 124px; }
+.m-data-list .item .name{display:block; width:208px; padding: 10px 10px 10px 5px;color: #333333}
+.m-data-list .item:hover .name{color: #39a030;}
+.m-data-list .item .org-name{ line-height:20px;height:23px; padding: 0 5px;color: #999999 }
+.m-data-list .item .num{display:inline-block;height:18px; line-height:18px;margin-left:5px; padding:0 6px 0 20px;font-size: 12px;border: 1px solid #ddd;border-radius:3px;color: #999999; background: url(../img/sprites.png) no-repeat -115px 3px;}
+.m-data-list .item .price{height:20px;line-height:20px; padding: 5px 10px 0 7px;font-size: 12px;color:#ff3f00; }
+
+
+/* 浮动提示区，用绝对定位实现，包装区是为了切换到浮动提示区内容不会自动隐藏  */
+/* .m-data-list .item .pop-wrap{display: none;position:absolute;top:-1px;right:-491px; width:493px; height: 400px; }
+.m-data-list .item:hover .pop-wrap{display: block;}
+.m-data-list .item .pop-content{position:absolute;top:0;right:0; width:426px;  padding:19px 25px 27px 19px; border: 1px solid #e6e6e6;color:#333333 !important; background-color:#f8f8f8;z-index:10;}
+.m-data-list .item .p-img{display:block; float:left;  margin-right: 18px;}
+.m-data-list .item .p-img img{width: 200px;height:124px;}
+.m-data-list .item .p-cat-name{ width:180px;line-height:18px;height:18px; font-weight:bold; color: #999999}
+.m-data-list .item .p-num{height: 12px;line-height: 12px; padding:20px 0 14px 0; font-size: 12px; }
+.m-data-list .item .p-field{ width:200px; height: 21px;line-height: 21px;}
+.m-data-list .item .p-desc{line-height: 25px; margin-top: 40px;}
+ */
+
+/* 浮动提示区模块  */
+.m-course-pop{position: absolute;left:0;top:0; z-index: 10;}
+.m-course-pop .pop-wrap{display:none; position:absolute; width:493px; height: 400px;}
+.m-course-pop .pop-content{position:absolute;top:0;right:0; width:426px;  padding:19px 25px 27px 19px; border: 1px solid #e6e6e6;color:#333333 !important; background-color:#f8f8f8;}
+.m-course-pop .p-img{display:block; float:left;  margin-right: 18px;}
+.m-course-pop .p-img img{width: 200px;height:124px;}
+.m-course-pop .p-cat-name{ width:180px;line-height:18px;height:18px; font-weight:bold; color: #999999}
+.m-course-pop .p-num{height: 22px;line-height: 22px; padding:20px 0 14px 0;}
+.m-course-pop .p-field{ width:200px; height: 22px;line-height: 22px;}
+.m-course-pop .p-desc{line-height: 25px; margin-top: 40px;}
+
+/* 分页模块  */
+.m-page{ padding-top:30px; text-align: right;color:#666666; }
+.m-page a{display:inline-block; margin: 0 4px;padding: 0;border: none;vertical-align: middle;}
+.m-page .znum{width: 20px;height: 20px; text-align: center;color: #999;}
+.m-page .znum:hover{background: #9fd7b2;color: #fff;}
+.m-page .selected,.m-page .selected:hover{font-weight: bolder;color: #10ae58;background: none;cursor: default;}
+.m-page .zbtn{width: 30px;height: 20px;text-indent: 9999px;overflow: hidden;background: url(../img/sprites.png) no-repeat -115px 3px #9dd8b1;}
+.m-page .zprev{background-position: -170px 4px;}
+.m-page .znext{background-position:-230px 4px;}
+.m-page .disabled{background-color: #ddd;}
+
+
+/* 机构模块  */
+.m-dept{width: 225px;border: 1px solid #ecebeb;border-top: none;background-color: #ffffff; }
+.m-dept h2,.m-dept .content{padding:20px 0 20px 20px; }
+.m-dept h2{border-bottom: 1px solid #dddddd;}
+.m-dept .content{border-bottom: 1px solid #d4d3d3;}
+.m-dept h2{font-size: 16px;}
+.m-dept .text{margin-bottom: 9px;color:#666666;}
+.m-dept .img{display: block;}
+
+/* 最热排行榜，虽然和机构模块有很多样式一样，但为了模块化我还是将其分开写  */
+.m-hot{width: 225px;margin-top: 19px;border: 1px solid #ecebeb;border-top: none;background-color: #ffffff;}
+.m-hot h2{padding:20px 0 20px 20px; }
+.m-hot h2{border-bottom: 1px solid #dddddd;}
+.m-hot .hot-wrap{position:relative; height:700px; border-bottom: 1px solid #d4d3d3;overflow: hidden;}
+.m-hot .content{position:absolute;top:0;left:0;width: 225px;}
+.m-hot h2{font-size: 16px;}
+/* 最热排行榜里面的元素项  */
+.m-hot .item{height: 50px;padding: 20px 0 0 20px;}
+.m-hot .item .img-link{display:block; float: left;width: 50px;height: 50px;}
+.m-hot .item img{width: 100%;height: 100%;}
+.m-hot .item .desc{float: left;width:125px; margin-left: 12px;}
+.m-hot .item .title{display: block;color: #333333;}
+.m-hot .item .count{margin-top:13px; color: 999999;}
+.m-hot .item .count span{margin-left: 6px;}
+
+
+/* 底部模块  */
+.m-foot{color:#a2a4a5;background-color:#2c3339; }
+.m-foot a{color: #a2a4a5;}
+.m-foot .content{padding:82px 0 78px 0px;}
+.m-foot .block{float: left;line-height:30px; } 
+.m-foot .block1{width: 495px;  padding-left: 50px;}
+.m-foot .block1 img{margin: 10px 0 22px 0;}
+.m-foot .block2{width: 210px;}
+.m-foot .block3{width: 133px;}
+.m-foot .block4{width: 72px;}
+.m-foot .weibo{margin-left: 12px;}
+
+
+/* 登录模块  */
+.m-login{display:none; position:fixed; width: 100%;height: 100%;min-width: 387px;min-height:288px; top:0;left:0;z-index: 1001;}
+.m-login .login-form{position:relative; width: 347px;margin:0 auto;padding:30px 0 38px 40px; background-color: #ffffff;}
+.m-login .login-form .colse{position: absolute;top:10px;right:8px;}
+.m-login .login-form .title{margin-bottom:20px; font-size:18px;line-height:18px; color:#444444;}
+.m-login .login-form .pass{margin: 15px 0 30px 0;}
+
+/* 视频播放弹出模块  */
+.m-video{display:none;position:fixed; width: 100%;height: 100%;min-width: 950px;min-height:676px; top:0;left:0;z-index: 1001;}
+.m-video .video{position:relative; width:890px;  margin:0 auto;padding:29px 30px 40px 30px;background-color: #ffffff;}
+.m-video .video .title{margin-bottom:22px; font-size:18px;line-height:20px; color:#444444;}
+.m-video .video .colse{position: absolute;top:10px;right:8px;}
